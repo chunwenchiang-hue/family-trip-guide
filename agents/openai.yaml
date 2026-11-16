@@ -1,0 +1,6 @@
+interface:
+  display_name: "家人朋友旅遊導遊"
+  short_description: "從旅伴願望到手機QR、預約與應變，協助主揪安心帶家人朋友出遊"
+  default_prompt: "請用 $family-trip-guide 接續或規劃這次旅行，先讀已有資料，逐步補齊需求並製作可用的同行指南。"
+policy:
+  allow_implicit_invocation: true
