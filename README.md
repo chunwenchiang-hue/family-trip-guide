@@ -36,7 +36,7 @@ A reusable agent skill for planning and leading family or friend trips, includin
 | Gemini CLI | `gemini skills install https://github.com/chunwenchiang-hue/family-trip-guide.git` |
 | Claude Code | 完整資料夾放到 `~/.claude/skills/family-trip-guide`，用 `/family-trip-guide` |
 
-上傳ZIP應使用各平台的Skills上傳入口。**[逐步安裝與匯入後測試](docs/platforms.md)** 說明Skills／Gems過渡、帳號功能限制及更新方法。已完成格式與封裝驗證，未宣稱登入兩個平台或呼叫其模型實測。
+上傳ZIP應使用各平台的Skills上傳入口。**[逐步安裝與匯入後測試](docs/platforms.md)** 說明Skills／Gems過渡、帳號功能限制及更新方法。已實際匯入兩平台並完成三情境驗收覆蓋；第二題的完成狀態誤判已修正並窄幅覆驗通過，詳見 [實測結果與界線](docs/validation.md)。
 
 使用支援 `SKILL.md` 的助理，將這個倉庫作為一個完整skill資料夾載入。請保留 `references/`，不能只複製主檔。
 

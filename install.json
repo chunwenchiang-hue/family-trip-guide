@@ -43,5 +43,43 @@
       "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/gemini-gem-instructions.txt"
     }
   ],
-  "permission": "Only install when explicitly requested by the user; this manifest grants no tool or account permissions."
+  "permission": "Only install when explicitly requested by the user; this manifest grants no tool or account permissions.",
+  "core_files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "b2e6aef2adc0bed8fed7318220b4e8225c854560cf839e747ae7119d463114ab"
+    },
+    {
+      "path": "references/acceptance.md",
+      "sha256": "c6211cc24c82e59997b00648d8c8921f99243325072a9f67307aa2c39c5317f4"
+    },
+    {
+      "path": "references/bookings-money.md",
+      "sha256": "2cfca977277b12a8f66faaf8c0cf46dc5323aacaf13956e567fd70317dc3b312"
+    },
+    {
+      "path": "references/companion-flow.md",
+      "sha256": "ff1991eba01c63029879cef2b3baa4fcbf7b706f989d7d16aad008b95fbc7418"
+    },
+    {
+      "path": "references/guide-voice.md",
+      "sha256": "7c286a734f26bed63c28b47ad9db8c284778edeeb2c7a9e74c047597c03d2ef1"
+    },
+    {
+      "path": "references/lessons.md",
+      "sha256": "3f220e024791e170cdd772d663268041a1795e3a280aace359b31acb63ea49f5"
+    },
+    {
+      "path": "references/mobile.md",
+      "sha256": "d4f4783a27b570f3a5263c44fd027b3800277cc238dcd884ecc47ff117d7ee6b"
+    },
+    {
+      "path": "references/planning.md",
+      "sha256": "56b6cef5dae0d3d00eb45a3a9091798acedca4c6e50797054700323b496b5f6d"
+    },
+    {
+      "path": "references/trip-record.md",
+      "sha256": "ec236a41c2b1113e60f63106b538b617f58852e5bb5d68b760312e4d0a7ef8cf"
+    }
+  ]
 }
