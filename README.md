@@ -17,6 +17,18 @@ A reusable agent skill for planning and leading family or friend trips, includin
 
 ## 安裝與啟用
 
+支援Codex、Claude Skills／Claude Code、Gemini Skills／Gemini CLI；仍使用Gems的Gemini帳號另有指令與完整知識檔。各平台共用同一份旅行方法，工具能力與實際載入結果需各自確認。
+
+| 想在哪裡使用 | 直接下載／安裝 |
+| --- | --- |
+| Gemini網頁或Mac的Skills | [Gemini上傳ZIP](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-gemini.zip) |
+| Claude網頁／桌面的Skills | [Claude上傳ZIP](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-claude.zip) |
+| Gemini還只有Gems | [指令TXT](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/gemini-gem-instructions.txt) ＋ [完整知識TXT](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-knowledge.txt) |
+| Gemini CLI | `gemini skills install https://github.com/chunwenchiang-hue/family-trip-guide.git` |
+| Claude Code | 完整資料夾放到 `~/.claude/skills/family-trip-guide`，用 `/family-trip-guide` |
+
+上傳ZIP應使用各平台的Skills上傳入口。**[逐步安裝與匯入後測試](docs/platforms.md)** 說明Skills／Gems過渡、帳號功能限制及更新方法。已完成格式與封裝驗證，未宣稱登入兩個平台或呼叫其模型實測。
+
 使用支援 `SKILL.md` 的助理，將這個倉庫作為一個完整skill資料夾載入。請保留 `references/`，不能只複製主檔。
 
 Codex尚未安裝此skill時，可執行：
@@ -44,7 +56,7 @@ git clone https://github.com/chunwenchiang-hue/family-trip-guide.git ~/.codex/sk
 並交付每人手機必須親手測試的清單。
 ```
 
-若助理沒有自動載入，明確提供此資料夾的 `SKILL.md` 路徑。其他平台請使用其支援的skill安裝方式。
+若助理沒有自動載入，明確提供此資料夾的 `SKILL.md` 路徑；上面的 `$family-trip-guide` 是Codex用法，其他平台依 [跨平台說明](docs/platforms.md) 啟用。
 
 ## 文件入口
 
