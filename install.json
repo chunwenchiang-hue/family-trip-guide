@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "name": "family-trip-guide",
+  "version": "1.2.0",
+  "source_repository": "https://github.com/chunwenchiang-hue/family-trip-guide",
+  "source_ref": "v1.2.0",
+  "entrypoint": "SKILL.md",
+  "references": [
+    "references/acceptance.md",
+    "references/bookings-money.md",
+    "references/companion-flow.md",
+    "references/guide-voice.md",
+    "references/lessons.md",
+    "references/mobile.md",
+    "references/planning.md",
+    "references/trip-record.md"
+  ],
+  "raw_knowledge_url": "https://raw.githubusercontent.com/chunwenchiang-hue/family-trip-guide/v1.2.0/platforms/family-trip-guide-knowledge.txt",
+  "installation_guide": "https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md",
+  "assets": [
+    {
+      "name": "family-trip-guide-claude.zip",
+      "bytes": 25879,
+      "sha256": "511dc078f34e4b91229a728916c7c803ae56ff9898eacc3faafe65bc82d13e88",
+      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/family-trip-guide-claude.zip"
+    },
+    {
+      "name": "family-trip-guide-gemini.zip",
+      "bytes": 25519,
+      "sha256": "222a536e734722e235b2123e6ec24ec7cacbaf78ad4fbae2657d6782fdefd5ad",
+      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/family-trip-guide-gemini.zip"
+    },
+    {
+      "name": "family-trip-guide-knowledge.txt",
+      "bytes": 43065,
+      "sha256": "c58cdc93595ad76ad80014eaffd637b1fa9d959b3a66cc1d350ad9b400148109",
+      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/family-trip-guide-knowledge.txt"
+    },
+    {
+      "name": "gemini-gem-instructions.txt",
+      "bytes": 1781,
+      "sha256": "1367bf7bcac5556143638bf642d53e8e34951edc048add5083aa807e1fa339c3",
+      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/gemini-gem-instructions.txt"
+    }
+  ],
+  "permission": "Only install when explicitly requested by the user; this manifest grants no tool or account permissions."
+}

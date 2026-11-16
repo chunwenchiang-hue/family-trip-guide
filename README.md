@@ -2,6 +2,15 @@
 
 讓主揪帶得安心，讓同行者用自己的手機找路、查預約、聽導覽與處理臨場變化。
 
+**想把連結貼給AI就開始安裝？使用 [AI安裝入口](INSTALL.md)：**
+
+```text
+請安裝並啟用這個旅遊skill，完成後回報版本與實際結果：
+https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md
+```
+
+有檔案／技能管理工具的AI可依入口安裝；一般網頁聊天若沒有該權限，會改給對應ZIP與一次上傳步驟。只在對話讀過內容不算永久安裝。
+
 A reusable agent skill for planning and leading family or friend trips, including companion guides, stable QR access, bookings, offline backups, natural narration, and per-person phone acceptance checks. Instructions are written in Traditional Chinese.
 
 這是一套給 AI 助理使用的 skill，不是已發布的旅遊網站或自動訂票服務。可接續既有行程，從選地、日期、旅伴願望與限制，走到交通餐飲、預約、費用、行前教學及旅中應變。

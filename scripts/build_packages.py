@@ -57,6 +57,8 @@ def build(output):
                           flatten_links(path.read_text(), path.parent)])
     knowledge_path = output / f'{NAME}-knowledge.txt'
     knowledge_path.write_text('\n'.join(knowledge) + '\n', encoding='utf-8')
+    # A raw GitHub URL can be read by assistants that cannot open release assets.
+    (ROOT / 'platforms' / f'{NAME}-knowledge.txt').write_bytes(knowledge_path.read_bytes())
     artifacts.append(knowledge_path)
     instructions_path = output / 'gemini-gem-instructions.txt'
     instructions_path.write_bytes((ROOT / 'platforms/gemini-gem-instructions.txt').read_bytes())
