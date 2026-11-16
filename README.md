@@ -1,96 +1,208 @@
 # Family Trip Guide｜家人朋友旅遊導遊
 
-讓主揪帶得安心，讓同行者用自己的手機找路、查預約、聽導覽與處理臨場變化。
+**把旅行大小事整理好，讓主揪帶得安心，同行的人也能用手機自己找到需要的資訊。**
 
-**想把連結貼給AI就開始安裝？使用 [AI安裝入口](INSTALL.md)：**
+這是一套給 AI 使用的「旅行工作指南」（skill）。裝進 Gemini 或 Claude 後，你可以像平常聊天一樣，請它協助選目的地、排路線、整理預約、分帳、準備行前教學與臨時備案。**不需要會寫程式，也不需要 GitHub 帳號。**
+
+第一次使用：**選你常用的 AI → 下載對應 ZIP → 上傳並啟用 → 貼上旅行需求。**
+
+[Gemini 安裝](#gemini-安裝步驟) · [Claude 安裝](#claude-安裝步驟) · [複製安裝指令](#把安裝指令貼給-ai) · [開始規劃範例](#開始規劃旅行直接複製修改)
+
+## 它能幫你準備什麼？
+
+| 旅行階段 | 可以請 AI 協助的事 |
+| --- | --- |
+| 還沒決定去哪 | 比較目的地和日期，了解每個人的願望、預算與體力 |
+| 開始排行程 | 挑景點和餐廳、安排交通與休息、減少拖行李、準備雨天與人潮備案 |
+| 預約與費用 | 整理要訂什麼、誰負責、截止日、確認資料與分帳 |
+| 出發前 | 準備手機行程入口、QR、預約查找方式、離線備份與五分鐘教學 |
+| 到了當地 | 找路、找預約、查外語溝通卡、聽導覽，依當天情況調整安排 |
+
+手機網站、QR、音檔和實際預約是否能做出來，要看當次 AI 有哪些工具。它應該清楚告訴你哪些已完成、哪些還需要你操作。**安裝這套指南，不代表 AI 已經取得訂票、付款或發布網站的能力。**
+
+## Gemini 安裝步驟
+
+1. **[下載 Gemini 安裝檔](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-gemini.zip)**。保留 ZIP，不必解壓縮。
+2. 登入 [Gemini](https://gemini.google.com/)，在側邊欄找 **自訂／Customize → Skills**。沒有「自訂」時，先展開「更多」。
+3. 點 **建立／Create → 上傳／Upload**，選剛下載的 `family-trip-guide-gemini.zip`。
+4. 完成上傳、檢查內容，再按 **建立／Create**。確認這個技能已安裝；若動作選單仍顯示「安裝」，再點一次。
+5. 開啟新對話，**輸入 `@`，從選單點選 `family-trip-guide`**，再貼上下面的旅行範例。
+
+**裝好了嗎？** 技能出現在已安裝清單，或選單出現「立即使用／解除安裝」；對話中也能從 `@` 選單選到它。只在訊息裡打出技能名稱，不一定真的有載入。
+
+### 只有 Gems，沒有 Skills？
+
+可以用 Gems 的方式載入同一套內容：
+
+1. 下載 [Gems 指令檔](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/gemini-gem-instructions.txt) 和 [完整知識檔](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-knowledge.txt)。
+2. 在 Gemini 建立新的 Gem，名稱填「家人朋友旅遊導遊」。
+3. 把指令檔的**全部文字**貼進「指令／Instructions」。
+4. 把完整知識檔上傳至「知識／Knowledge」，儲存後從這個 Gem 開始聊天。
+
+如果兩個入口都找不到，先看 [常見問題](#常見問題)。選單會隨帳號與介面更新而不同；可對照 [Google 官方 Skills 說明](https://support.google.com/gemini/answer/17094296?hl=en)。
+
+## Claude 安裝步驟
+
+1. **[下載 Claude 安裝檔](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-claude.zip)**。保留 ZIP，不必解壓縮。
+2. 登入 [Claude](https://claude.ai/)，進入 **自訂／Customize → Skills**。
+3. 點 **＋ → 建立技能／Create skill → 上傳技能／Upload a skill**。
+4. 選擇 `family-trip-guide-claude.zip`，完成匯入。
+5. 確認 `family-trip-guide` 的**開關已開啟**，再開新對話，貼上下面的旅行範例，第一句請它使用這個技能。
+
+**裝好了嗎？** Skills 清單裡看得到名稱，而且開關開啟。把 ZIP 當一般聊天附件傳給 Claude，不等於裝進 Skills。
+
+若無法上傳或啟用，到 **設定／Settings → 功能／Capabilities** 確認「程式執行與檔案建立／Code execution and file creation」（有些介面稱「Create and edit files」）已開啟。公司帳號可能需要管理員開放。詳見 [Claude 官方安裝說明](https://support.claude.com/en/articles/12512180-use-skills-in-claude)。
+
+## 把安裝指令貼給 AI
+
+想先讓 AI 協助判斷怎麼安裝？複製整段到你要使用的 AI：
 
 ```text
-請安裝並啟用這個旅遊skill，完成後回報版本與實際結果：
+請幫我安裝並啟用 Family Trip Guide（家人朋友旅遊導遊）：
 https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md
+
+請依你目前平台的實際能力操作。
+如果無法替我安裝到帳號，請直接給我對應下載檔和需要手動做的步驟。
+完成後回報：實際版本、是否已安裝、是否已啟用；不能確認的請明說。
+不要把讀過連結或在這次對話使用，說成已永久安裝。
 ```
 
-有檔案／技能管理工具的AI可依入口安裝；一般網頁聊天若沒有該權限，會改給對應ZIP與一次上傳步驟。只在對話讀過內容不算永久安裝。
+**貼連結不保證能自動安裝。** 有檔案或技能管理工具的 AI 可以依入口處理；一般網頁聊天若沒有修改 Skills 的權限，仍需要你按上面的步驟上傳一次。
 
-A reusable agent skill for planning and leading family or friend trips, including companion guides, stable QR access, bookings, offline backups, natural narration, and per-person phone acceptance checks. Instructions are written in Traditional Chinese.
+## 開始規劃旅行：直接複製修改
 
-這是一套給 AI 助理使用的 skill，不是已發布的旅遊網站或自動訂票服務。可接續既有行程，從選地、日期、旅伴願望與限制，走到交通餐飲、預約、費用、行前教學及旅中應變。
+不必一開始就把所有細節想完。把知道的填上，不知道的寫「未定」，讓 AI 帶你一步步補齊。Gemini 請先從 `@` 選單選取技能；Claude 請先確認技能開關已開。
 
-## 能做什麼
+### 範例一：還不知道去哪裡
 
-- 依團體步速、休息與行李安排路線，保住重要預約，準備有觸發條件的備案。
-- 整理預約、拆單、代表人、付款與正式憑證；普通單號、收據號、分享QR及正式票券分清楚。
-- 製作可用的同行手機入口：穩定網址／QR、每日行程、地圖、預約及外語溝通卡。
-- 景點導覽優先採溫暖自然台灣女聲，先做短試聽確認，再製作整批；可依旅客偏好調整。
-- 首頁明顯下載入口、可辨認版本檔名、手機HTML預覽限制與離線備援。
-- 每位旅伴親手驗證入口、下載重開、聲音、預約、真離線及正式憑證；不把桌面測試當成全團就緒。
+```text
+請使用 family-trip-guide（家人朋友旅遊導遊），陪我規劃一次家人旅行。
 
-## 安裝與啟用
+出發地：台北
+目的地：未定，想先比較適合的地方
+日期與天數：明年秋天，約 5～7 天
+同行者：4 位成人、1 位長輩
+預算：每人約新台幣 5 萬元，包含交通與住宿
+我們喜歡：美食、風景、慢慢逛
+需要照顧的事：長輩不想走太多階梯，希望少換飯店、少拖行李
 
-支援Codex、Claude Skills／Claude Code、Gemini Skills／Gemini CLI；仍使用Gems的Gemini帳號另有指令與完整知識檔。各平台共用同一份旅行方法，工具能力與實際載入結果需各自確認。
+先幫我比較 2～3 個可行選擇，說明取捨。
+先問最影響決定的問題，每輪不超過 3 題，不要一次排滿所有行程。
+```
 
-| 想在哪裡使用 | 直接下載／安裝 |
-| --- | --- |
-| Gemini網頁或Mac的Skills | [Gemini上傳ZIP](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-gemini.zip) |
-| Claude網頁／桌面的Skills | [Claude上傳ZIP](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-claude.zip) |
-| Gemini還只有Gems | [指令TXT](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/gemini-gem-instructions.txt) ＋ [完整知識TXT](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-knowledge.txt) |
-| Gemini CLI | `gemini skills install https://github.com/chunwenchiang-hue/family-trip-guide.git` |
-| Claude Code | 完整資料夾放到 `~/.claude/skills/family-trip-guide`，用 `/family-trip-guide` |
+### 範例二：地方和日期已決定
 
-上傳ZIP應使用各平台的Skills上傳入口。**[逐步安裝與匯入後測試](docs/platforms.md)** 說明Skills／Gems過渡、帳號功能限制及更新方法。已實際匯入兩平台並完成三情境驗收覆蓋；第二題的完成狀態誤判已修正並窄幅覆驗通過，詳見 [實測結果與界線](docs/validation.md)。
+```text
+請使用 family-trip-guide，規劃我們的朋友旅行。
 
-使用支援 `SKILL.md` 的助理，將這個倉庫作為一個完整skill資料夾載入。請保留 `references/`，不能只複製主檔。
+目的地：京都、神戶
+日期：2027 年 11 月 10～16 日
+同行者：5 位成人
+預算：每人約新台幣 6 萬元
+願望：賞楓、散步、吃在地美食，每天留休息時間
+限制：移動日盡量少拖行李；飲食限制尚待逐人確認
+已訂項目：機票已訂，住宿未訂
 
-Codex尚未安裝此skill時，可執行：
+先整理已知資料、缺少資訊和要決定的順序，再提出每日行程草案。
+交通請說明選擇理由，遇到雨天、人潮或疲累時要有備案。
+預約與付款先整理選項和條件，等我明確授權後再執行。
+
+行程確認後，再依可用工具準備同行手機指南、離線備份、
+預約查找方式、費用表與五分鐘行前教學。
+景點聲音偏好溫暖自然的台灣女聲，先讓我聽短試聽，確認後才整批製作。
+```
+
+### 範例三：已經有行程，請幫我補漏
+
+```text
+請使用 family-trip-guide，從同行夥伴的角度檢查我接下來提供的行程。
+
+檢查範圍：
+共用說明／備忘錄 → 掃 QR → 下載最新版 → 重新開啟
+→ 播放導覽 → 找到預約 → 飛航模式下查重要資料。
+
+也請檢查交通銜接、拖行李、休息、雨天備案與費用管理。
+原本的預約、PDF 和 QR 都要保留；能直接修好的先修好。
+最後分別列出：已修正、仍缺資料、每位旅伴要在自己手機親手測試的項目。
+沒有實測過的操作，不要標成通過。
+```
+
+以上都是虛構範例，請改成自己的旅行資料。訂單、聯絡方式與票券只放在你信任且有權限的對話或空間，不要貼在這個公開 GitHub 頁面或 Issues。
+
+### 想改天再繼續？
+
+結束前可以請 AI 整理交接摘要，下次貼回來，不必從頭說明：
+
+```text
+請整理這次旅行的接續摘要：已確認事項、每位旅伴的願望與限制、
+已訂項目、最新檔案位置、未決問題，以及下一步。
+請保留未知與待確認事項，讓我下次可以直接接著規劃。
+```
+
+## 常見問題
+
+**一定要付費嗎？**  
+這份指南以 MIT 授權公開分享，不另外收費。AI 平台的方案、功能與使用額度依各自規定；語音、託管或預約也可能有其他費用。指南不附付費服務，也不會自動替你購買。
+
+**找不到 Skills，或 AI 讀不到 GitHub 連結？**  
+先用上方直接下載連結，依平台上傳。Gemini 只有 Gems 時可用備援步驟。若帳號沒有這些功能，可將 [完整知識文字檔](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest/download/family-trip-guide-knowledge.txt) 當聊天附件，請 AI 讀完後依其規劃；這只是當次對話使用，沒有永久安裝。若連附件也不支援，先確認平台功能與管理限制。
+
+**安裝後，為什麼沒有直接訂好票、產生網站或聲音？**  
+這套指南教 AI 工作方法；實際操作仍需要對應工具和你的授權。沒有工具時，AI 應先整理可審閱資料，列出還需要你完成的步驟。
+
+**手機下載了 HTML，卻不能按按鈕或播放聲音？**  
+手機「檔案」或聊天 App 的預覽可能不支援互動。請依行程附的說明使用支援的瀏覽器或離線方案，並保留文字／PDF 備援。每個人都要在自己的手機測過，不能只測主揪一台。
+
+**如何更新？**  
+重新下載最新版，依平台取代或重新匯入；先保留自己的修改。Gemini 取代後要再確認已安裝，Claude 要確認開關仍開啟。上傳的版本不保證自動跟著 GitHub 更新。
+
+**這份指南實際試過嗎？**  
+核心版本 **v1.2.0** 已實際匯入 Gemini 與 Claude，完成三個虛構情境的驗收覆蓋：逐人離線檢查、工具與完成狀態、先試聽再整批。初測發現完成狀態誤判，修正後覆測受影響題目通過。詳見 [實測紀錄與範圍](docs/validation.md)；不代表每個帳號和手機都已測過。
+
+## 進一步閱讀
+
+- [完整跨平台教學、三個安裝後小測試](docs/platforms.md)
+- [給 AI 的安裝入口](INSTALL.md) · [最新版下載](https://github.com/chunwenchiang-hue/family-trip-guide/releases/latest)
+- [同行手機操作與逐人實測](references/companion-flow.md)
+- [自然女聲製作方法](references/guide-voice.md)
+- [主要旅行流程](SKILL.md)
+
+<details>
+<summary>給使用 Codex、Claude Code 或 Gemini CLI 的人</summary>
+
+一般網頁使用者照上面的上傳步驟即可。以下指令適合已使用開發工具的人；既有同名資料夾請先保留自訂修改，不直接覆寫。
+
+**Codex 首次安裝**
 
 ```sh
 git clone https://github.com/chunwenchiang-hue/family-trip-guide.git ~/.codex/skills/family-trip-guide
 ```
 
-若該路徑已存在，先保留自訂修改、檢查來源及差異，再選擇更新方式；不要直接覆寫。也可下載倉庫ZIP，解壓後把完整資料夾放到自己的skill位置。
+新對話用 `$family-trip-guide` 加上旅行需求。
 
-在新的Codex對話中啟用：
+**Claude Code 首次安裝**
 
-```text
-請用 $family-trip-guide 規劃這次家人旅行。
-先讀現有資料，逐步確認願望、體力、行李、預算與已訂項目，
-再製作同行手機指南、備援與行前教學。
+```sh
+git clone https://github.com/chunwenchiang-hue/family-trip-guide.git ~/.claude/skills/family-trip-guide
 ```
 
-檢查既有行程：
+使用 `/family-trip-guide` 加上旅行需求。
 
-```text
-請用 $family-trip-guide 從同行者角度檢查：
-共用說明／備忘錄 → 原QR → 新版下載 → 重開 → 導覽與預約 → 真離線。
-能直接修好的就修好，保留原預約、PDF與QR，
-並交付每人手機必須親手測試的清單。
+**Gemini CLI**
+
+```sh
+gemini skills install https://github.com/chunwenchiang-hue/family-trip-guide.git
+gemini skills list --all
 ```
 
-若助理沒有自動載入，明確提供此資料夾的 `SKILL.md` 路徑；上面的 `$family-trip-guide` 是Codex用法，其他平台依 [跨平台說明](docs/platforms.md) 啟用。
+請依工具提示確認載入與授權。完整說明見 [跨平台教學](docs/platforms.md)。使用完整資料夾，保留 `SKILL.md` 與全部 `references/`。
 
-## 文件入口
+</details>
 
-| 文件 | 用途 |
-| --- | --- |
-| [SKILL.md](SKILL.md) | 主要流程、取捨與完成判定 |
-| [規劃與帶隊](references/planning.md) | 選地日期、願望、步行、行李、交通與備案 |
-| [預約與帳務](references/bookings-money.md) | 預約證據、授權、受眾、付款與分帳 |
-| [手機與同行服務](references/mobile.md) | QR、導航、語言卡、離線、教學與更新 |
-| [同行完整操作流程](references/companion-flow.md) | 下載入口、版本檔名、手機預覽限制及六項逐人實測範本 |
-| [自然女聲](references/guide-voice.md) | 已驗證配方、短試聽確認、整批製作與失敗處理 |
-| [資料契約](references/trip-record.md) | 可依現有格式採用的最小資料欄位 |
-| [驗收與情境](references/acceptance.md) | 真實任務、證據層級、回歸與待測項目 |
-| [匿名案例](references/lessons.md) | 真實使用經驗抽象成的可重用教訓 |
+## 分享與授權
 
-## 工具、授權與驗收界線
+把 [這個首頁連結](https://github.com/chunwenchiang-hue/family-trip-guide) 傳給朋友，就可以從安裝開始照做。
 
-Skill本身不附金鑰、不綁定付費服務，也不自動取得訂票、付款、發送訊息或外送文稿的授權。執行時使用當次可用工具與使用者具體授權；沒有工具時提供可用替代並說明未完成項目。
+本倉庫只分享可重用指引與匿名／虛構範例，不包含私人行程、旅客資料、訂單、票券、PDF、QR 或私人測試截圖。[MIT License](LICENSE) 適用於本倉庫內容；外部服務與素材依各自條款使用。
 
-自然女聲文件中的Microsoft音色與工具版本是歷史驗證配方，使用前須核對當時可用性與服務條件。先聽短樣確認，不因音色標有Neural就宣稱自然。此倉庫不附音檔或第三方素材。
-
-手機「檔案」或聊天App預覽可能不能執行HTML互動與音訊。下載內容一致、網頁播放成功、相機實掃及手機飛航模式是不同證據，須分開記錄。每位旅伴的驗收結果及協助需求保留在其團體授權範圍，不公開。
-
-本倉庫只包含可重用指引與匿名／虛構範例，不包含真實旅客資料、行程網站、訂單、確認信、票券、QR、PDF或私人驗收截圖。
-
-## 授權
-
-[MIT License](LICENSE)。適用於本倉庫內容；外部服務、供應商與第三方素材依各自條款使用。
+安裝步驟核對日期：2026-11-16。
