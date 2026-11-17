@@ -11,6 +11,10 @@
 | Claude Code | 完整GitHub倉庫 | 放到 `~/.claude/skills/family-trip-guide`，用 `/family-trip-guide` |
 | Codex | 完整GitHub倉庫 | 放到 `~/.codex/skills/family-trip-guide`，用 `$family-trip-guide` |
 
+## Antigravity
+
+已安裝 Antigravity App、CLI 或 IDE 的使用者，請看 [Antigravity 安裝與開始使用](antigravity.md)。同一份 v1.3.0 核心可放到旅行工作區的 `.agents/skills/family-trip-guide/`；也可自行選擇官方全域目錄 `~/.gemini/config/skills/family-trip-guide/`。不需要安裝 Gemini 網頁技能，不會自動同步其帳號設定。開新對話後以 `/family-trip-guide` 或技能名稱要求讀取；安裝與行為驗收分開記錄。目前未在 Antigravity 實機跑模型測試。
+
 ## Gemini Skills
 
 在可用Skills入口的Gemini網頁或Mac上，上傳Gemini ZIP；ZIP最上層就是 `SKILL.md` 與 `references/`，所有參考檔一併帶入。只上傳 `SKILL.md` 會漏掉詳細流程。建立後可用自然語言要求使用 `family-trip-guide`，或由該介面選取skill；前綴依當前產品介面，不沿用Codex的 `$`。

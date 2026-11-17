@@ -2,15 +2,17 @@
 
 **把旅行大小事整理好，讓主揪帶得安心，同行的人也能用手機自己找到需要的資訊。**
 
-這是一套給 AI 使用的「旅行工作指南」（skill）。裝進 Gemini 或 Claude 後，你可以像平常聊天一樣，請它協助選目的地、排路線、整理預約、分帳、準備行前教學與臨時備案。**不需要會寫程式，也不需要 GitHub 帳號。**
+這是一套給 AI 使用的「旅行工作指南」（skill）。裝進 Gemini、Claude 或 Antigravity 後，你可以像平常聊天一樣，請它協助選目的地、排路線、整理預約、分帳、準備行前教學與臨時備案。**不需要會寫程式，也不需要 GitHub 帳號。**
 
-第一次使用：**選你常用的 AI → 下載對應 ZIP → 上傳並啟用 → 貼上旅行需求。**
+第一次使用：**選你常用的 AI → 照該平台教學安裝 → 貼上旅行需求。**
+
+**已使用 Antigravity？** 直接看 [Antigravity 安裝與開始使用](docs/antigravity.md)，可把該頁連結與安裝要求貼給它處理，不需要先裝進 Gemini 網頁。
 
 如果打開連結先看到一堆檔案，往下滑到這份說明即可，**不用點綠色 Code 按鈕**。也可以直接分享 [跳到使用說明的連結](https://github.com/chunwenchiang-hue/family-trip-guide#readme)。
 
-第一次只要選 **Gemini 或 Claude 其中一個**，不需要兩邊都安裝。建議先用電腦瀏覽器完成安裝；手機也可先看範例，再依帳號支援的入口操作。
+第一次只要選 **Gemini、Claude 或 Antigravity 其中一個**，不需要兩邊都安裝。建議先用電腦瀏覽器完成安裝；手機也可先看範例，再依帳號支援的入口操作。
 
-[Gemini 安裝](#gemini-安裝步驟) · [Claude 安裝](#claude-安裝步驟) · [複製安裝指令](#把安裝指令貼給-ai) · [開始規劃範例](#開始規劃旅行直接複製修改) · [複製分享文字](#複製分享給朋友)
+[Gemini 安裝](#gemini-安裝步驟) · [Claude 安裝](#claude-安裝步驟) · [Antigravity 安裝](docs/antigravity.md) · [複製安裝指令](#把安裝指令貼給-ai) · [開始規劃範例](#開始規劃旅行直接複製修改) · [複製分享文字](#複製分享給朋友)
 
 ### 下載後找不到檔案？
 
@@ -209,7 +211,7 @@ https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md
 重新下載最新版，依平台取代或重新匯入；先保留自己的修改。Gemini 取代後要再確認已安裝，Claude 要確認開關仍開啟。上傳的版本不保證自動跟著 GitHub 更新。
 
 **這份指南實際試過嗎？**  
-目前核心版本 **v1.3.0** 已加入上述線上同行預設並完成封裝檢查；先前 **v1.2.0** 已實際匯入 Gemini 與 Claude，完成三個虛構情境的驗收覆蓋：逐人離線檢查、工具與完成狀態、先試聽再整批。初測發現完成狀態誤判，修正後覆測受影響題目通過。詳見 [實測紀錄與範圍](docs/validation.md)；v1.3.0本次未重新匯入Gemini／Claude，不代表每個帳號和手機都已測過。
+目前核心版本 **v1.3.0** 已完成封裝檢查，並實際更新 Gemini 與 Claude 帳號副本：Claude 的線上同行／主揪備份規劃驗收通過；Gemini 在本次帳號測試中已安裝但讀取技能失敗，尚未通過新版行為驗收。Antigravity 已提供依官方規格整理的安裝方式，**尚未在使用者的 Antigravity 上實測**。先前 v1.2.0 三情境測試獨立保留，詳見 [實測紀錄與範圍](docs/validation.md)。
 
 ## 進一步閱讀
 
@@ -268,10 +270,22 @@ https://github.com/chunwenchiang-hue/family-trip-guide#readme
 指南免費公開，AI 平台功能與額度依你的帳號而定。只貼連結不一定能自動安裝，頁面有完整操作步驟。
 ```
 
+### 分享給已使用 Antigravity 的朋友
+
+```text
+這套「家人朋友旅遊導遊」也能放進你已安裝的 Antigravity：
+https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/docs/antigravity.md
+
+在 Antigravity 開好旅行資料夾，把上面連結連同「請依這頁安裝 family-trip-guide v1.3.0，保留原設定與同名技能的自訂修改」貼給它。
+安裝後開新對話，用 /family-trip-guide 開始，說明去哪、日期、人數、預算和願望；不知道的寫未定。
+
+新版預設同行掃QR直接用線上行程，主揪另外保存備份；景點故事放在對應日期的景點卡。頁面有完整步驟和安裝後測試。
+```
+
 ## 分享與授權
 
 把 [這個使用說明連結](https://github.com/chunwenchiang-hue/family-trip-guide#readme) 傳給朋友，就可以從安裝開始照做。
 
 本倉庫只分享可重用指引與匿名／虛構範例，不包含私人行程、旅客資料、訂單、票券、PDF、QR 或私人測試截圖。[MIT License](LICENSE) 適用於本倉庫內容；外部服務與素材依各自條款使用。
 
-安裝步驟核對日期：2026-11-16。
+安裝步驟核對日期：2026-11-17。

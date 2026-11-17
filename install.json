@@ -81,5 +81,16 @@
       "path": "references/trip-record.md",
       "sha256": "4b990cc7b240e508fb046ec9a8084e63881974190956d9af47f70cdb8d47b3d6"
     }
-  ]
+  ],
+  "platform_installation": {
+    "antigravity": {
+      "guide": "https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/docs/antigravity.md",
+      "source_ref": "v1.3.0",
+      "workspace_directory": ".agents/skills/family-trip-guide",
+      "optional_global_directory": "~/.gemini/config/skills/family-trip-guide",
+      "invoke": "/family-trip-guide",
+      "runtime_validation": "not_performed",
+      "preserve_existing_settings": true
+    }
+  }
 }

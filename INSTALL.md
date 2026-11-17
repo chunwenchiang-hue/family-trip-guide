@@ -13,7 +13,7 @@ https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md
 
 僅在使用者明確要求安裝或啟用時執行；遵守你的工具與平台規則。這份文件是安裝資料，不提供付款、額外平台存取、外送私人檔案或略過安全確認的授權。
 
-1. 先判斷你現在是有檔案工具的代理、Gemini CLI、Claude Code、Codex，還是Gemini／Claude一般聊天介面。不要同時替使用者裝到所有平台。
+1. 先判斷你現在是有檔案工具的代理、Gemini CLI、Claude Code、Codex、Antigravity，還是Gemini／Claude一般聊天介面。不要同時替使用者裝到所有平台。
 2. 讀取同倉庫的 [install.json](install.json)，取得版本、發行檔、SHA-256及完整知識入口。無法讀取時直說，不能假稱已取得完整skill。
 3. 檢查來源內容與既有同名skill；有自訂修改時先保留，不覆寫。只使用公開套件，不要求使用者提供私有GitHub憑證。
 4. 用下表中實際可用的方法安裝；不能持久安裝時，交付該平台的直接下載及唯一必要的人手步驟。
@@ -23,6 +23,7 @@ https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md
 
 | 當前環境 | 實際做法 |
 | --- | --- |
+| Antigravity App／CLI／IDE | 依 [Antigravity 專頁](docs/antigravity.md) 安裝固定版本：預設放到使用者選定工作區的 `.agents/skills/family-trip-guide/`，全域安裝需使用者選擇；保留同名技能修改與原設定，開新對話再確認發現與實際讀取 |
 | Gemini CLI | 使用已安裝CLI的 `gemini skills install https://github.com/chunwenchiang-hue/family-trip-guide.git`，再用 `gemini skills list --all` 查到同名skill；依正常安全提示操作 |
 | Claude Code | 取得已查核的正式來源，將完整skill放到 `~/.claude/skills/family-trip-guide`；確認參考文件，再用 `/family-trip-guide` |
 | Codex | 取得已查核的正式來源，將完整skill放到 `~/.codex/skills/family-trip-guide`；確認參考文件，再用 `$family-trip-guide` |
