@@ -6,7 +6,7 @@
 
 第一次使用：**選你常用的 AI → 照該平台教學安裝 → 貼上旅行需求。**
 
-**已使用 Antigravity？** 直接看 [Antigravity 安裝與開始使用](docs/antigravity.md)，可把該頁連結與安裝要求貼給它處理，不需要先裝進 Gemini 網頁。
+**已使用 Antigravity？** 直接看 [Antigravity 安裝與開始使用](docs/antigravity.md)，可把該頁連結與安裝要求貼給它處理，不需要先裝進 Gemini 網頁。專頁從「建立旅行資料夾」開始，包含一段可複製安裝文字、沒有 Git 的做法及第一則旅行需求。
 
 如果打開連結先看到一堆檔案，往下滑到這份說明即可，**不用點綠色 Code 按鈕**。也可以直接分享 [跳到使用說明的連結](https://github.com/chunwenchiang-hue/family-trip-guide#readme)。
 
@@ -95,6 +95,8 @@ https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md
 **貼連結不保證能自動安裝。** 有檔案或技能管理工具的 AI 可以依入口處理；一般網頁聊天若沒有修改 Skills 的權限，仍需要你按上面的步驟上傳一次。
 
 ## 開始規劃旅行：直接複製修改
+
+Antigravity 使用者先到 [專用教學](docs/antigravity.md#第一次開始規劃)，留在安裝技能的同一旅行專案開新對話。
 
 不必一開始就把所有細節想完。把知道的填上，不知道的寫「未定」，讓 AI 帶你一步步補齊。Gemini 請先從 `@` 選單選取技能；Claude 請先確認技能開關已開。
 

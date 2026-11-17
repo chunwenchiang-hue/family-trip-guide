@@ -14,7 +14,7 @@ https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md
 僅在使用者明確要求安裝或啟用時執行；遵守你的工具與平台規則。這份文件是安裝資料，不提供付款、額外平台存取、外送私人檔案或略過安全確認的授權。
 
 1. 先判斷你現在是有檔案工具的代理、Gemini CLI、Claude Code、Codex、Antigravity，還是Gemini／Claude一般聊天介面。不要同時替使用者裝到所有平台。
-2. 讀取同倉庫的 [install.json](install.json)，取得版本、發行檔、SHA-256及完整知識入口。無法讀取時直說，不能假稱已取得完整skill。
+2. 讀取同倉庫的 [install.json](install.json)，取得版本、發行檔、SHA-256及完整知識入口。若使用者指定固定版本，改讀該標籤的 manifest（例如 `https://raw.githubusercontent.com/chunwenchiang-hue/family-trip-guide/v1.3.0/install.json`），不要拿未來 main 版本的雜湊核對舊版。無法讀取時直說，不能假稱已取得完整skill。
 3. 檢查來源內容與既有同名skill；有自訂修改時先保留，不覆寫。只使用公開套件，不要求使用者提供私有GitHub憑證。
 4. 用下表中實際可用的方法安裝；不能持久安裝時，交付該平台的直接下載及唯一必要的人手步驟。
 5. 重新讀回 `SKILL.md` 與全部 `references/` 是否存在。檔案未寫版本號時，可與manifest的 `core_files` 雜湊比對；平台若正規化文字導致雜湊不同，就明列版本未核實，不靠同名推定。安裝成功不等於已跑行為測試；測試題見 [跨平台教學](docs/platforms.md#匯入後的三個小測試)。未實測就保持未測。
