@@ -274,14 +274,42 @@ https://github.com/chunwenchiang-hue/family-trip-guide#readme
 
 ### 分享給已使用 Antigravity 的朋友
 
+點文字框右上角的複製按鈕，或選取框內全文，就能直接貼到 LINE 轉傳。
+
 ```text
-這套「家人朋友旅遊導遊」也能放進你已安裝的 Antigravity：
+這是我們整理的「家人朋友旅遊導遊」skill，可以裝進你已有的 Antigravity，幫忙選目的地、排行程、整理交通、預約和費用 ✈️
+
+完整安裝與使用教學：
 https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/docs/antigravity.md
 
-在 Antigravity 開好旅行資料夾，把上面連結連同「請依這頁安裝 family-trip-guide v1.3.0，保留原設定與同名技能的自訂修改」貼給它。
-安裝後開新對話，用 /family-trip-guide 開始，說明去哪、日期、人數、預算和願望；不知道的寫未定。
+【安裝方式】
+1. 在電腦建立「我的旅行」資料夾。
+2. 在 Antigravity 建立專案並加入這個資料夾；如果用 IDE，就選「開啟資料夾」。
+3. 在 Antigravity 對話裡貼上這段並送出：
 
-新版預設同行掃QR直接用線上行程，主揪另外保存備份；景點故事放在對應日期的景點卡。頁面有完整步驟和安裝後測試。
+請依以下教學，在目前旅行工作區安裝 family-trip-guide v1.3.0：
+https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/docs/antigravity.md
+保留原設定和既有修改，確認主指引、八份參考文件及版本完整，再回報實際安裝位置。讀不到或無法安裝請直說。
+
+4. 裝好後，留在同一個旅行專案開新對話，輸入 /family-trip-guide，再貼旅行需求。沒有技能選單時，改說「請使用 family-trip-guide，先讀取主指引與相關參考文件」。
+
+【第一次可以這樣開始】
+請使用 family-trip-guide，幫我規劃旅行。
+
+出發地：台北
+目的地：未定
+日期：2027年秋天，約5天
+同行者：4位成人
+每人預算：新台幣5萬元，含交通住宿
+願望：美食、風景、慢慢逛
+需要留意：少換飯店、少拖行李；飲食限制待確認
+已訂項目：無
+
+請先讀取技能主指引與相關參考，整理已知和待確認事項，每輪最多問3題。先不要訂票、付款、發布網站或製作整批音檔。
+
+上面的資料改成自己的就好，不知道的寫「未定」。新版預設同行掃QR直接用線上行程，主揪另外保存備份。
+
+教學裡也有沒有 Git 的下載方式和安裝後測試。看到「安裝成功」後，仍要確認它真的讀得到技能，再開始正式規劃。
 ```
 
 ## 分享與授權
