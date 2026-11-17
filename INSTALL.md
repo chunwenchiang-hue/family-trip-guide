@@ -32,10 +32,10 @@ https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md
 
 ## 直接下載
 
-- [Gemini Skills ZIP](https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/family-trip-guide-gemini.zip)
-- [Claude Skills ZIP](https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/family-trip-guide-claude.zip)
-- [完整知識文字檔](https://raw.githubusercontent.com/chunwenchiang-hue/family-trip-guide/v1.2.0/platforms/family-trip-guide-knowledge.txt)：包含主指引與八份參考文件，可在同檔依來源名稱尋找章節。
-- [Gems指令](https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/gemini-gem-instructions.txt) 與 [完整知識下載](https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/family-trip-guide-knowledge.txt)
+- [Gemini Skills ZIP](https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.3.0/family-trip-guide-gemini.zip)
+- [Claude Skills ZIP](https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.3.0/family-trip-guide-claude.zip)
+- [完整知識文字檔](https://raw.githubusercontent.com/chunwenchiang-hue/family-trip-guide/v1.3.0/platforms/family-trip-guide-knowledge.txt)：包含主指引與八份參考文件，可在同檔依來源名稱尋找章節。
+- [Gems指令](https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.3.0/gemini-gem-instructions.txt) 與 [完整知識下載](https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.3.0/family-trip-guide-knowledge.txt)
 
 Gemini網頁可用Skills時，在Customize → Skills →建立 →上傳相應ZIP；Claude在Customize → Skills →新增 →上傳Skill。這些步驟已實際走過，沒有在上傳頁看到「從GitHub網址直接安裝」欄位。若AI沒有操作此介面的工具，仍需使用者完成上傳，不能謊稱只讀連結就已安裝。
 

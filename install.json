@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "name": "family-trip-guide",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "source_repository": "https://github.com/chunwenchiang-hue/family-trip-guide",
-  "source_ref": "v1.2.0",
+  "source_ref": "v1.3.0",
   "entrypoint": "SKILL.md",
   "references": [
     "references/acceptance.md",
@@ -15,43 +15,43 @@
     "references/planning.md",
     "references/trip-record.md"
   ],
-  "raw_knowledge_url": "https://raw.githubusercontent.com/chunwenchiang-hue/family-trip-guide/v1.2.0/platforms/family-trip-guide-knowledge.txt",
+  "raw_knowledge_url": "https://raw.githubusercontent.com/chunwenchiang-hue/family-trip-guide/v1.3.0/platforms/family-trip-guide-knowledge.txt",
   "installation_guide": "https://github.com/chunwenchiang-hue/family-trip-guide/blob/main/INSTALL.md",
   "assets": [
     {
       "name": "family-trip-guide-claude.zip",
-      "bytes": 25879,
-      "sha256": "511dc078f34e4b91229a728916c7c803ae56ff9898eacc3faafe65bc82d13e88",
-      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/family-trip-guide-claude.zip"
+      "bytes": 26561,
+      "sha256": "ce5bcd8146ce8683301c2830fd1d791301dd467c84b0ec964f38195af60941fd",
+      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.3.0/family-trip-guide-claude.zip"
     },
     {
       "name": "family-trip-guide-gemini.zip",
-      "bytes": 25519,
-      "sha256": "222a536e734722e235b2123e6ec24ec7cacbaf78ad4fbae2657d6782fdefd5ad",
-      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/family-trip-guide-gemini.zip"
+      "bytes": 26201,
+      "sha256": "c36800c91a7d1ef2e2aa2e72415e74d6495b888bfeedea65e7a44d5042d693a4",
+      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.3.0/family-trip-guide-gemini.zip"
     },
     {
       "name": "family-trip-guide-knowledge.txt",
-      "bytes": 43065,
-      "sha256": "c58cdc93595ad76ad80014eaffd637b1fa9d959b3a66cc1d350ad9b400148109",
-      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/family-trip-guide-knowledge.txt"
+      "bytes": 44761,
+      "sha256": "30ee122fbbaa3136597a585bfca192f3320bb457258aa9503799c4bff8636774",
+      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.3.0/family-trip-guide-knowledge.txt"
     },
     {
       "name": "gemini-gem-instructions.txt",
-      "bytes": 1781,
-      "sha256": "1367bf7bcac5556143638bf642d53e8e34951edc048add5083aa807e1fa339c3",
-      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.2.0/gemini-gem-instructions.txt"
+      "bytes": 2014,
+      "sha256": "18f3e5194451539c1ddad139591d2fa0eaebc709b01b1b5ceaf8c8741346012e",
+      "url": "https://github.com/chunwenchiang-hue/family-trip-guide/releases/download/v1.3.0/gemini-gem-instructions.txt"
     }
   ],
   "permission": "Only install when explicitly requested by the user; this manifest grants no tool or account permissions.",
   "core_files": [
     {
       "path": "SKILL.md",
-      "sha256": "b2e6aef2adc0bed8fed7318220b4e8225c854560cf839e747ae7119d463114ab"
+      "sha256": "ab9cd0a421c16c2ffb714cffcdf706ecf16e72535af4f363a59fdc91903ea3ef"
     },
     {
       "path": "references/acceptance.md",
-      "sha256": "c6211cc24c82e59997b00648d8c8921f99243325072a9f67307aa2c39c5317f4"
+      "sha256": "e86240ebd505891b5fb6d3413570f23d81f50d7bd9ef753bf96d32b601a5e9dc"
     },
     {
       "path": "references/bookings-money.md",
@@ -59,19 +59,19 @@
     },
     {
       "path": "references/companion-flow.md",
-      "sha256": "ff1991eba01c63029879cef2b3baa4fcbf7b706f989d7d16aad008b95fbc7418"
+      "sha256": "5e5edef1ce3f02dd091859517d9af4bb4080b792ce3c86d2e50751bcbfe49d60"
     },
     {
       "path": "references/guide-voice.md",
-      "sha256": "7c286a734f26bed63c28b47ad9db8c284778edeeb2c7a9e74c047597c03d2ef1"
+      "sha256": "b162f9646719e45d76b05289ce4efafb528ee46625667572b5aea3bfdb35a109"
     },
     {
       "path": "references/lessons.md",
-      "sha256": "3f220e024791e170cdd772d663268041a1795e3a280aace359b31acb63ea49f5"
+      "sha256": "9a81093b1f99bf5d96911d26b0f2e7840ee03b85d5a9d23844351caed2f95601"
     },
     {
       "path": "references/mobile.md",
-      "sha256": "d4f4783a27b570f3a5263c44fd027b3800277cc238dcd884ecc47ff117d7ee6b"
+      "sha256": "2d343b075f4e72397586c4f325a23fa7abbdf7be63b13291c37a3450edaae4db"
     },
     {
       "path": "references/planning.md",
@@ -79,7 +79,7 @@
     },
     {
       "path": "references/trip-record.md",
-      "sha256": "ec236a41c2b1113e60f63106b538b617f58852e5bb5d68b760312e4d0a7ef8cf"
+      "sha256": "4b990cc7b240e508fb046ec9a8084e63881974190956d9af47f70cdb8d47b3d6"
     }
   ]
 }
